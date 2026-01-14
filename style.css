@@ -60,10 +60,14 @@ section {
 }
 
 .hero-visual img {
-  display: block;
-  max-width: min(100%, 720px);
-  width: 100%;
-  height: auto;
+  border-radius:0.25em;
+  border:0;
+  display:inline-block;
+  position:relative;
+  width:40vw;
+  height:auto;
+  overflow:hidden;
+
 }
 
 /* Headings */
