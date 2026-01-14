@@ -1,0 +1,121 @@
+[
+  {
+    "id": "test1",
+    "source_file": "/shared/input/test1.jpg",
+    "text": null,
+    "semantic": {
+      "base_text":"A sharply composed photograph captures a Black man walking with ...",
+      "language": "English",
+      "translations":{
+        "French": "Une photographie bien composée capture un homme noir en marche avec...",
+        "Spanish": "Una fotografía bien armada capta a un hombre negro caminando con...",
+        "German": "Eine gut zusammengesetzte Fotografie fängt einen schwarzen Mann an, der mit...",
+        "Chinese": "一张清晰组合得当的照片记录着一个黑人走下了..."
+      },
+      "summary": "A man walking in a street with a paved sidewalk.",
+      "keywords": ["photograph", "black man", "purpose", "sunlit", "stone-paved street", "camera","..."],
+      "key_entities":["Black man", "backpack", "light-colored stone-paved street"],
+      "topic_classification":"Photograph of a well-dressed Black man walking in an urban environment",
+      "emotions": ["calm", "confident", "purposeful"],
+      "narrative_type":"Third-person, Objective, Description",
+      "style":"Journalistic"
+
+    },
+    "visual": {
+      "base_image": "/shared/input/test1.jpg",
+      "depth_map": {
+        "path": "/shared/output/test1/depth/map.png",
+        "confidence": null,
+        "method": "depth"
+      },
+      "normal_map": null,
+      "pose_detection": {
+        "path": "/shared/output/test1/pose/pose.png",
+        "confidence": null,
+        "method": "pose"
+      },
+      "object_detection": [
+        {
+          "id": "obj_000",
+          "label": "person",
+          "bbox": [
+            384,
+            154,
+            632,
+            659
+          ],
+          "segmentation": {
+            "mask_path": "/shared/output/test1/object_detection/obj_000_mask.png",
+            "cropped_image_path": "/shared/output/test1/object_detection/obj_000.png",
+            "confidence": 0.9997181296348572,
+            "method": "detectron2_mask_rcnn_R_50_FPN_3x"
+          },
+          "mesh_3d": {
+            "path": "/shared/output/test1/object_detection/obj_000_mesh.obj",
+            "method": "tripoSR",
+            "confidence": null
+          },
+          "size_estimation": {
+            "relative_scale": 0.3,
+            "absolute_scale": 1.95
+          },
+          "material_estimation": ["body","clothing"],
+          "position_from_camera_estimation": {
+            "x": 1.2,
+            "y": 0.0,
+            "z": 3.5
+          },
+          "weight_estimation": 95.0
+        },
+        {
+          "id": "obj_001",
+          "label": "backpack",
+          "bbox": [
+            551,
+            240,
+            603,
+            377
+          ],
+          "segmentation": {
+            "mask_path": "/shared/output/test1/object_detection/obj_001_mask.png",
+            "cropped_image_path": "/shared/output/test1/object_detection/obj_001.png",
+            "confidence": 0.8089632391929626,
+            "method": "detectron2_mask_rcnn_R_50_FPN_3x"
+          },
+          "mesh_3d": {
+            "path": "/shared/output/test1/object_detection/obj_001_mesh.obj",
+            "method": "tripoSR",
+            "confidence": null
+          },
+          "size_estimation": {
+            "relative_scale": 0.15,
+            "absolute_scale": 0.5
+          },
+          "material_estimation": ["leather","fabric"],
+          "position_from_camera_estimation": {
+            "x": 1.2,
+            "y": 0.3,
+            "z": 3.5
+          },
+          "weight_estimation": 0.6
+        }
+      ],
+      "dominant_colors": [{
+        "color": "#000000",
+        "percentage": 45.0
+      },{
+        "color": "#FFFFFF",
+        "percentage": 25.0
+      },{
+        "color": "#808080",
+        "percentage": 15.0
+      }],
+      "pointcloud_3d": {
+        "path": "/shared/output/test1/pointcloud/cloud.ply",
+        "confidence": null,
+        "method": "pointcloud"
+      }
+    }
+
+  }
+]
