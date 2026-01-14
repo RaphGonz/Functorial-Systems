@@ -25,13 +25,11 @@
       "base_image": "/shared/input/test1.jpg",
       "depth_map": {
         "path": "/shared/output/test1/depth/map.png",
-        "confidence": null,
         "method": "depth"
       },
       "normal_map": null,
       "pose_detection": {
         "path": "/shared/output/test1/pose/pose.png",
-        "confidence": null,
         "method": "pose"
       },
       "object_detection": [
@@ -52,8 +50,7 @@
           },
           "mesh_3d": {
             "path": "/shared/output/test1/object_detection/obj_000_mesh.obj",
-            "method": "tripoSR",
-            "confidence": null
+            "method": "tripoSR"
           },
           "size_estimation": {
             "relative_scale": 0.3,
@@ -101,13 +98,13 @@
         }
       ],
       "dominant_colors": [{
-        "color": "#000000",
+        "color": "#2D2E2B",
         "percentage": 45.0
       },{
-        "color": "#FFFFFF",
+        "color": "#C4C5BE",
         "percentage": 25.0
       },{
-        "color": "#808080",
+        "color": "#837A75",
         "percentage": 15.0
       }],
       "pointcloud_3d": {
