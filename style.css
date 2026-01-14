@@ -9,6 +9,12 @@
 }
 
 /* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -55,7 +61,6 @@ section {
   margin-bottom: 32px;
 }
 
-
 /* Image */
 .image {
   border-radius: 0.25em;
@@ -75,7 +80,6 @@ section {
   height: auto;
   object-fit: contain;
 }
-
 
 /* Headings */
 h2 {
