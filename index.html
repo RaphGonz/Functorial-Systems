@@ -113,7 +113,7 @@
     <section>
       <div class="card">
         <h2>Overview</h2>
-        <p>Functorial Systems builds a Functorial Data Refinery: a modular system that transforms raw data (images, text; audio/video planned) into typed, reusable data artifacts for production AI systems. The focus is data structure, not model performance.</p>
+        <p>Functorial Systems builds a Functorial Data Refinery: a modular system that transforms raw data (images, text; audio/video planned) into typed, reusable data artifacts for production AI systems. The focus is data structure, testable quality, and reuse — not model performance.</p>
       </div>
     </section>
 
@@ -140,6 +140,43 @@
           <li>Each service declares explicit inputs and outputs.</li>
           <li>Outputs are merged into normalized, typed data schemas (e.g. JSON artifacts).</li>
           <li>The same enriched data can be reused across multiple models and workflows.</li>
+          <li>Optional conformance checks prevent error propagation and enable quality grades.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Product Path</h2>
+        <p>3 layers :</p>
+        <ul>
+          <li><b>Refine</b>: standardized enriched artifacts (typed schemas + provenance).</li>
+          <li><b>Refine + Customize</b>: client-specific enrichments, schemas, and routing (profiles, rules, adapters).</li>
+          <li><b>Refine + Customize + Test</b>: conformance tests, quality gates, and signed reports (grades).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Product Path</h2>
+        <p>3 layers :</p>
+        <ul>
+          <li><b>Refine</b>: standardized enriched artifacts (typed schemas + provenance).</li>
+          <li><b>Refine + Customize</b>: client-specific enrichments, schemas, and routing (profiles, rules, adapters).</li>
+          <li><b>Refine + Customize + Test</b>: conformance tests, quality gates, and signed reports (grades).</li>
+        </ul>
+        <img src="assets/diagrams/Before.png" alt="Before After diagram" />
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Commercial Offer</h2>
+        <ul>
+          <li><b>Usage-based API</b>: priced per item and per enrichment type (depth, segmentation, OCR, semantics, etc.).</li>
+          <li><b>Enterprise deployment (on-prem / VPC)</b>: license + maintenance for sensitive data and control.</li>
+          <li><b>Compliance pack</b>: automated reports (schema validity, invariants, abstention/outliers/duplicates, provenance).</li>
         </ul>
       </div>
     </section>
@@ -172,17 +209,17 @@
           <li>Not a prompt framework.</li>
           <li>Not a demo-first or UI-driven product.</li>
         </ul>
-        <img src="assets/diagrams/Before.png" alt="Before After diagram" />
       </div>
     </section>
 
     <section>
       <div class="card">
-        <h2>Long-Term Direction (Non-Commitment)</h2>
-        <img class="centered-image" src="assets/diagrams/longterm.png" alt="Long-term direction diagram" />
+        <h2>Long-Term Direction</h2>
+        <img class="centered-image" src="assets/diagrams/longterm2.png" alt="Long-term direction diagram" />
         <ul>
-          <li>Interoperable enriched data across models.</li>
-          <li>Research toward universal multimodal embeddings.</li>
+          <li>Interoperable enriched data via stable schemas, profiles, and conformance tests.</li>
+          <li>Signed data artifacts for audit and governance workflows, to create a new standard.</li>
+          <li>Research toward universal multimodal embeddings (open-core compatible).</li>
           <li>Data-centric foundations for reliable, governable AI systems.</li>
         </ul>
       </div>
